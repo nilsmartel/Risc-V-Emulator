@@ -1,6 +1,5 @@
 mod reg;
 
-
 fn main() {
     println!("Hello, world!");
 }
@@ -16,7 +15,7 @@ impl CPU {
         let index: usize = index.into();
 
         // the 0 register is always 0
-        if index == 0 {
+        if index == reg::ZERO {
             return;
         }
 
