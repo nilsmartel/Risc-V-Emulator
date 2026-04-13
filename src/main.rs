@@ -17,7 +17,7 @@ impl CPU {
         let index: usize = index.into();
 
         // the 0 register is always 0
-        if index ==  {
+        if index == 0 {
             return;
         }
 
