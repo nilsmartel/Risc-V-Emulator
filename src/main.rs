@@ -4,9 +4,11 @@ fn main() {
     println!("Hello, world!");
 }
 
+// RV64I
 #[derive(Default, Debug)]
 struct CPU {
-    registers: [u32; 32],
+    memory: Vec<u32>,
+    registers: [u64; 32],
     pc: u32,
 }
 
