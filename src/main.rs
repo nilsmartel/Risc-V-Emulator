@@ -1,4 +1,4 @@
-mod register;
+mod reg;
 
 use std::default;
 
@@ -17,7 +17,7 @@ impl CPU {
         let index: usize = index.into();
 
         // the 0 register is always 0
-        if index == 0 {
+        if index ==  {
             return;
         }
 
